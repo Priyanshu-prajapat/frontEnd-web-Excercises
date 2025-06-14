@@ -8,7 +8,7 @@ import gif from "../../assets/gif/MainPgImg.gif";
 
 const MainPage = () => {
     return (
-        <Box sx={{ marginBlock: '10vh' }}>
+        <Box sx={{ marginBottom: '10vh' }}>
             <HeroSection img={gif} title={"Fitness Fanatic"} subtitle={"A fitness movement that is worth breaking a sweat for"} />
             <Box sx={{ marginBlock: "10vh" }}>
                 <Typography variant='h2' sx={{ fontSize: '75px' }} >

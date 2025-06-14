@@ -21,24 +21,24 @@ const articles = [
         _desc: 'Create a forum where runners can discuss training strategies, share their experiences, and seek advice from fellow runners.',
         _img: running,
     },
-    {
-        id: 204,
-        _title: "",
-        _desc: '',
-        _img: ''
-    },
-    {
-        id: 205,
-        _title: "",
-        _desc: '',
-        _img: ''
-    },
-    {
-        id: 206,
-        _title: "",
-        _desc: '',
-        _img: ''
-    },
+    // {
+    //     id: 204,
+    //     _title: "",
+    //     _desc: '',
+    //     _img: ""
+    // },
+    // {
+    //     id: 205,
+    //     _title: "",
+    //     _desc: '',
+    //     _img: ''
+    // },
+    // {
+    //     id: 206,
+    //     _title: "",
+    //     _desc: '',
+    //     _img: ''
+    // },
 ];
 
 let sevenDays = [

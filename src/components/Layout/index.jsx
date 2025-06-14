@@ -11,17 +11,17 @@ const Layout = () => {
         }
     })
     return (
-        <>
+        <React.Fragment>
             <NavBar />
-            <Box>
-                <Container>
+            <Box sx={{ marginTop: '5rem' }}>
+                <Container >
                     <ThemeProvider theme={theme}>
                         <Outlet />
                     </ThemeProvider>
                 </Container>
             </Box>
             <Footer />
-        </>
+        </React.Fragment>
     )
 }
 

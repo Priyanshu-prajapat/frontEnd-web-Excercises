@@ -6,12 +6,13 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx'
 import FitnessExercises from './pages/FitnessExercises.jsx';
-import GetDiet from './pages/GetDiet.jsx'
 import HealthCare from './pages/HealthCare.jsx'
 import Layout from './components/Layout/index.jsx';
-import Yoga from './pages/Yoga.jsx';
 import OneMonthPlan from './components/FitnessPlans/OneMonthPlan/index.jsx';
 import OneWeekPlan from './components/FitnessPlans/OneWeekPlan/index.jsx';
+import ExercisePanelOfOneMonth from './components/FitnessPlans/ExercisePanelOfOneMonth/index.jsx';
+import ExercisePanelOfOneWeek from './components/FitnessPlans/ExercisePanelOfOneWeek/index.jsx';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,13 +20,12 @@ const router = createBrowserRouter(
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
-      <Route path='fitness-exercises' element={<FitnessExercises />} >
-        <Route path='one-month-exercise-plan' element={<OneMonthPlan />} />
-        <Route path='one-week-exercise-plan' element={<OneWeekPlan />} />
-      </Route>
+      <Route path='fitness-exercises' element={<FitnessExercises />} />
+      <Route path='fitness-exercises/one-month-exercise-plan' element={<OneMonthPlan />} />
+      <Route path='fitness-exercises/one-month-exercise-plan/:dayName' element={<ExercisePanelOfOneMonth />} />
+      <Route path='fitness-exercises/one-week-exercise-plan' element={<OneWeekPlan />} />
+      <Route path='fitness-exercises/one-week-exercise-plan/:dayName' element={<ExercisePanelOfOneWeek />} />
       <Route path='health-care' element={<HealthCare />} />
-      <Route path='yoga' element={<Yoga />} />
-      <Route path='get-diet' element={<GetDiet />} />
     </Route>
   )
 )

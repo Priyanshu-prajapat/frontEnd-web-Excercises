@@ -1,10 +1,12 @@
+import { Box } from '@mui/material'
 import React from 'react'
+import ModernAbout from '../components/ModernAbout'
 
 const About = () => {
     return (
-        <h1>
-            About Page
-        </h1>
+        <Box>
+            <ModernAbout />
+        </Box>
     )
 }
 

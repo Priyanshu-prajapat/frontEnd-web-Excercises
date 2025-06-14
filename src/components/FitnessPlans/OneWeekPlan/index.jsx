@@ -2,6 +2,7 @@ import React from 'react'
 import { sevenDays } from '../../../database/db';
 import styled from '@emotion/styled';
 import { Box, Stack, Typography, Paper } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const OneWeekPlan = () => {
     const Item = styled(Box)(({ theme }) => ({
@@ -37,13 +38,23 @@ const OneWeekPlan = () => {
                         <>
                             <Item
                                 key={index}
-                                sx={{ display: 'flex', alignItems: 'center' }}
+                                sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
                             >
                                 <Circle variant='outlined'>
                                     {item.day}
                                 </Circle>
                                 <Box sx={{ paddingInline: '30px' }}>
-                                    <Typography variant='h5'>{item.dayName}</Typography>
+                                    <Link to={`${item.dayName}`}>
+                                        <Typography
+                                            variant='h5'
+                                            sx={{
+                                                color: 'white',
+                                                textDecorationLine: "none"
+                                            }}
+                                        >
+                                            {item.dayName}
+                                        </Typography>
+                                    </Link>
                                 </Box>
                             </Item>
                         </>

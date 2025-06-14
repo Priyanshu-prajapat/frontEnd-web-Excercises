@@ -2,9 +2,9 @@ import React from 'react'
 
 const Yoga = () => {
     return (
-        <div>
+        <h1>
             Here We start yoga.
-        </div>
+        </h1>
     )
 }
 

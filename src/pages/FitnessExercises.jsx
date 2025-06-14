@@ -6,7 +6,7 @@ import HeroSection from '../components/HeroSection';
 import gif from "../assets/gif/HealthCareImg.png"
 import styled from '@emotion/styled';
 import { purple } from '@mui/material/colors';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const FitnessExercises = () => {
 
@@ -81,7 +81,7 @@ const FitnessExercises = () => {
                     </Grid>
                 </Grid>
             </Box>
-            <Outlet />
+            {/* <Outlet /> */}
         </>
     )
 }

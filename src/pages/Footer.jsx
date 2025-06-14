@@ -11,8 +11,8 @@ const Footer = () => {
         { _title: 'HOME', _link: '' },
         { _title: 'FITNESS', _link: 'fitness-exercises' },
         { _title: 'HEALTH CARE', _link: 'health-care' },
-        { _title: 'YOGA', _link: 'yoga' },
-        { _title: 'GET DIET', _link: 'get-diet' },
+        // { _title: 'YOGA', _link: 'yoga' },
+        // { _title: 'GET DIET', _link: 'get-diet' },
     ];
 
     const theme = createTheme({
